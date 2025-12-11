@@ -33,8 +33,8 @@ local colors = {
 	green = "#7cc46c",
 	bg_green = "#405e42",
 	teal = "#82a69c",
-	cyan = "#62d9fa",
-	sign_change = "#07e4f6",
+	cyan = "#a7c5db",
+	sign_change = "#a7c5db",
 	sign_add = "#9CFFD3",
 	sign_delete = "#e6041e",
 
