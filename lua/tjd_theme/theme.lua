@@ -86,8 +86,8 @@ theme.set_highlights = function()
 	hl(0, "Define", { fg = c.red, bg = "NONE" })
 	hl(0, "Macro", { fg = c.red, bg = "NONE" })
 	hl(0, "PreCondit", { fg = c.fg, bg = "NONE" })
-	hl(0, "Special", { fg = c.cyan, bg = "NONE" })
-	hl(0, "SpecialChar", { fg = c.white, bg = "NONE" })
+	hl(0, "Special", { fg = c.orange, bg = "NONE" })
+	hl(0, "SpecialChar", { fg = c.red, bg = "NONE" })
 	hl(0, "Tag", { fg = c.cyan, bg = "NONE" })
 	hl(0, "Debug", { fg = c.red, bg = "NONE" })
 	hl(0, "Delimiter", { fg = c.off_white, bg = "NONE" })
@@ -337,10 +337,11 @@ theme.set_highlights = function()
 	hl(0, "StatusLineTermNC", { fg = c.line, bg = "NONE" })
 
 	-- Telescope
-	hl(0, "TelescopeSelection", { fg = c.hint_blue, bg = "NONE" })
+	hl(0, "TelescopeSelection", { fg = c.light_blue, bg = "NONE" })
 	hl(0, "TelescopeMatching", { fg = c.info_yellow, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = c.light_gray, bg = c.bg })
 	hl(0, "TelescopeResultsLineNr", { fg = c.fg, bg = c.bg })
+	hl(0, "TelescopeCursor", { fg = c.fg, bg = c.normal_bg })
 
 	-- Tree
 	hl(0, "NvimTreeFolderIcon", { fg = c.purp, bg = "NONE" })
