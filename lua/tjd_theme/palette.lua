@@ -4,7 +4,7 @@ local colors = {
 	alt_fg = "#bdbdbd",
 	alt_bg = "#202020",
 	cursor_fg = "#202020",
-	cursor_bg = "#a0f0f0",
+	cursor_bg = "#a04040",
 	line_nr = "#303030",
 	dark = "#101010",
 	accent = "#ee52c7",
@@ -37,12 +37,6 @@ local colors = {
 	sign_change = "#a7c5db",
 	sign_add = "#9CFFD3",
 	sign_delete = "#e6041e",
-
-	-- modes
-	normal_bg = "#47657b",
-	insert_bg = "#47556b",
-	visual_bg = "#405e42",
-	command_bg = "#3b5e58",
 
 	-- from lualine
 	ll_black = "#202020",

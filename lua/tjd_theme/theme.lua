@@ -53,8 +53,8 @@ theme.set_highlights = function()
 	hl(0, "SpecialKey", { fg = c.fg, bg = "NONE", bold = true })
 	hl(0, "Title", { fg = c.cyan, bg = "NONE", bold = true })
 	hl(0, "ErrorMsg", { fg = c.red, bg = c.bg, bold = true })
-	hl(0, "Search", { fg = c.fg, bg = c.bg_green })
-	hl(0, "IncSearch", { fg = c.fg, bg = c.bg_orange })
+	hl(0, "Search", { fg = c.fg, bg = c.bg_orange })
+	hl(0, "IncSearch", { fg = c.fg, bg = c.bg_green })
 	hl(0, "Substitute", { fg = c.black, bg = c.green })
 	hl(0, "MoreMsg", { fg = c.orange, bg = "NONE" })
 	hl(0, "Question", { fg = c.orange, bg = "NONE" })
@@ -438,8 +438,9 @@ theme.set_highlights = function()
 	hl(0, "netrwClassify", { fg = c.off_white, bg = "NONE" })
 
 	-- GO
-	hl(0, "type.definition.go", { fg = c.light_blue, bg = "NONE" })
-	hl(0, "type.go", { fg = c.light_blue, bg = "NONE" })
+	hl(0, "@type.definition.go", { fg = c.light_blue, bg = "NONE" })
+	hl(0, "@type.go", { fg = c.light_blue, bg = "NONE" })
+	hl(0, "@keyword.type.go", { fg = c.dark_orange, bg = "NONE" })
 end
 
 return theme
