@@ -18,6 +18,7 @@ local colors = {
 	hint_blue = "#352cdf",
 	light_blue = "#a7c5db",
 	blue = "#80b0df",
+	rich_blue = "#4eade5",
 	purp = "#5200cc",
 	magenta = "#634659",
 	error_red = "#200000",
@@ -34,6 +35,12 @@ local colors = {
 	bg_green = "#405e42",
 	teal = "#82a69c",
 	cyan = "#a7c5db",
+	pale_cyan = "#6fafbd",
+
+	-- special things
+	function_call = "#b09d79",
+
+	-- git changes
 	sign_change = "#a7c5db",
 	sign_add = "#9CFFD3",
 	sign_delete = "#e6041e",
@@ -44,25 +51,6 @@ local colors = {
 	visual_bg = "#405e42",
 	command_bg = "#3b5e58",
 
-	-- from lualine
-	ll_black = "#202020",
-	shellblue = "#00DFFF",
-	darkgray = "#3c3836",
-	lightgray = "#504945",
-	inactivegray = "#7c6f64",
-	uglyorange = "#FFAF00",
-	barnred = "#b32727",
-	brightorange = "#C08A20",
-	brightred = "#d22424",
-	anothercyan = "#00DFFF",
-	noen = "#ad0925",
-	added = { fg = "#00881b" },
-	modified = { fg = "#f42b4c" },
-	removed = { fg = "#d6071f" },
-	error = { fg = "#d6071f" },
-	warn = { fg = "#e7008b" },
-	info = { fg = "#5200cc" },
-	hint = { fg = "#00881b" },
 }
 
 return colors

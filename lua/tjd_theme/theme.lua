@@ -71,7 +71,7 @@ theme.set_highlights = function()
 	hl(0, "Identifier", { fg = c.fg, bg = "NONE" })
 	hl(0, "Function", { fg = c.yellow, bg = "NONE" })
 	hl(0, "Operator", { fg = c.paren, bg = "NONE" })
-	hl(0, "Type", { fg = c.dark_orange, bg = "NONE" })
+	hl(0, "Type", { fg = c.yellow, bg = "NONE" })
 	hl(0, "StorageClass", { fg = c.orange, bg = "NONE" })
 	hl(0, "Structure", { fg = c.orange, bg = "NONE" })
 	hl(0, "Typedef", { fg = c.orange, bg = "NONE" })
@@ -406,14 +406,14 @@ theme.set_highlights = function()
 	hl(0, "TSText", { fg = c.alt_fg, bg = "NONE" })
 	hl(0, "TSOperator", { fg = c.alt_fg, bg = "NONE" })
 	hl(0, "TSPunctDelimiter", { fg = c.alt_fg, bg = "NONE" })
-	hl(0, "TSTagDelimiter", { fg = c.alt_fg, bg = "NONE" })
+	hl(0, "TSTagDelimiter", { fg = c.fg, bg = "NONE" })
 	hl(0, "TSTagAttribute", { fg = c.orange, bg = "NONE" })
 	hl(0, "TSPunctBracket", { fg = c.alt_fg, bg = "NONE" })
 	hl(0, "TSPunctSpecial", { fg = c.paren, bg = "NONE" })
 	hl(0, "TSString", { fg = c.green, bg = "NONE" })
 	hl(0, "TSStringRegex", { fg = c.green, bg = "NONE" })
 	hl(0, "TSStringEscape", { fg = c.green, bg = "NONE" })
-	hl(0, "TSTag", { fg = c.cyan, bg = "NONE" })
+	hl(0, "TSTag", { fg = c.fg, bg = "NONE" })
 	hl(0, "TSEmphasis", { fg = "NONE", bg = "NONE", italic = true })
 	hl(0, "TSUnderline", { fg = "NONE", bg = "NONE", underline = true })
 	hl(0, "TSTitle", { fg = c.fg, bg = "NONE" })
@@ -437,19 +437,32 @@ theme.set_highlights = function()
 
 	hl(0, "netrwClassify", { fg = c.off_white, bg = "NONE" })
 
-	-- GO
-	hl(0, "@type.definition.go", { fg = c.cyan, bg = "NONE" })
-	hl(0, "@type.go", { fg = c.cyan, bg = "NONE" })
-	hl(0, "@keyword.type.go", { fg = c.dark_orange, bg = "NONE" })
+	-- general code
+	hl(0, "@lsp.type.interface", { fg = c.purp, bg = "NONE" })
 
+	-- GO
+	hl(0, "@type.definition.go", { fg = c.pale_cyan, bg = "NONE" })
+	hl(0, "@type.go", { fg = c.pale_cyan, bg = "NONE" })
+	hl(0, "@type.builtin.go", { fg = c.dark_orange, bg = "NONE" })
+	hl(0, "@keyword.type.go", { fg = c.orange, bg = "NONE" })
+	hl(0, "@function.method.call.go", { fg = c.function_call, bg = "NONE" })
+
+	-- C#
+	hl(0, "@lsp.namespace.type.cs", { fg = c.yellow, bg = "NONE" })
+
+	-- Status Line
 	hl(0, "MiniStatuslineModeNormal", { fg = c.black, bg = c.normal_bg })
 	hl(0, "MiniStatuslineModeVisual", { fg = c.black, bg = c.normal_bg })
 	hl(0, "MiniStatuslineModeInsert", { fg = c.black, bg = c.insert_bg })
 	hl(0, "MiniStatuslineModeCommand", { fg = c.black, bg = c.command_bg })
 
-	-- React
+	-- JS/TS/React
 	hl(0, "@tag.delimiter.javascript", { fg = c.off_white, bg = c.bg })
 	hl(0, "@tag.attribute.javascript", { fg = c.yellow, bg = c.bg })
+
+	-- markup/xml/html
+	hl(0, "@tag.xml", { fg = c.yellow, bg = c.bg })
+	hl(0, "htmlTag", { fg = c.fg, bg = c.bg })
 end
 
 return theme
