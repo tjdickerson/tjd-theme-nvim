@@ -38,6 +38,12 @@ local colors = {
 	sign_add = "#9CFFD3",
 	sign_delete = "#e6041e",
 
+	-- modes
+	normal_bg = "#47657b",
+	insert_bg = "#47556b",
+	visual_bg = "#405e42",
+	command_bg = "#3b5e58",
+
 	-- from lualine
 	ll_black = "#202020",
 	shellblue = "#00DFFF",

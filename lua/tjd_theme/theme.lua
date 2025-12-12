@@ -438,9 +438,14 @@ theme.set_highlights = function()
 	hl(0, "netrwClassify", { fg = c.off_white, bg = "NONE" })
 
 	-- GO
-	hl(0, "@type.definition.go", { fg = c.light_blue, bg = "NONE" })
-	hl(0, "@type.go", { fg = c.light_blue, bg = "NONE" })
+	hl(0, "@type.definition.go", { fg = c.cyan, bg = "NONE" })
+	hl(0, "@type.go", { fg = c.cyan, bg = "NONE" })
 	hl(0, "@keyword.type.go", { fg = c.dark_orange, bg = "NONE" })
+
+	hl(0, "MiniStatuslineModeNormal", { fg = c.black, bg = c.normal_bg })
+	hl(0, "MiniStatuslineModeVisual", { fg = c.black, bg = c.normal_bg })
+	hl(0, "MiniStatuslineModeInsert", { fg = c.black, bg = c.insert_bg })
+	hl(0, "MiniStatuslineModeCommand", { fg = c.black, bg = c.command_bg })
 end
 
 return theme
