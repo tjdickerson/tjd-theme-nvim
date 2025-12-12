@@ -70,8 +70,8 @@ theme.set_highlights = function()
 	hl(0, "Float", { fg = c.fg, bg = "NONE" })
 	hl(0, "Identifier", { fg = c.fg, bg = "NONE" })
 	hl(0, "Function", { fg = c.yellow, bg = "NONE" })
-	hl(0, "Operator", { fg = c.paren, bg = "NONE" })
-	hl(0, "Type", { fg = c.yellow, bg = "NONE" })
+	hl(0, "Operator", { fg = c.off_white, bg = "NONE" })
+	hl(0, "Type", { fg = c.fg, bg = "NONE" })
 	hl(0, "StorageClass", { fg = c.orange, bg = "NONE" })
 	hl(0, "Structure", { fg = c.orange, bg = "NONE" })
 	hl(0, "Typedef", { fg = c.orange, bg = "NONE" })
@@ -449,6 +449,9 @@ theme.set_highlights = function()
 
 	-- C#
 	hl(0, "@lsp.namespace.type.cs", { fg = c.yellow, bg = "NONE" })
+	hl(0, "@lsp.type.namespace.cs", { fg = c.yellow, bg = "NONE" })
+	hl(0, "@lsp.typemod.class.static.cs", { fg = c.fg, bg = "NONE" })
+	hl(0, "@variable.member.cs", { fg = c.yellow, bg = "NONE" })
 
 	-- Status Line
 	hl(0, "MiniStatuslineModeNormal", { fg = c.black, bg = c.normal_bg })
