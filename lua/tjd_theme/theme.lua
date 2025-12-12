@@ -446,6 +446,10 @@ theme.set_highlights = function()
 	hl(0, "MiniStatuslineModeVisual", { fg = c.black, bg = c.normal_bg })
 	hl(0, "MiniStatuslineModeInsert", { fg = c.black, bg = c.insert_bg })
 	hl(0, "MiniStatuslineModeCommand", { fg = c.black, bg = c.command_bg })
+
+	-- React
+	hl(0, "@tag.delimiter.javascript", { fg = c.off_white, bg = c.bg })
+	hl(0, "@tag.attribute.javascript", { fg = c.yellow, bg = c.bg })
 end
 
 return theme
