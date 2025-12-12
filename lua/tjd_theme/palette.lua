@@ -1,5 +1,5 @@
 local colors = {
-	fg = "#c9c9c0",
+	fg = "#c9c9b0",
 	bg = "#202020",
 	alt_fg = "#bdbdbd",
 	alt_bg = "#202020",
@@ -14,7 +14,7 @@ local colors = {
 	line = "#808080",
 	white = "#f0f0f0",
 	off_white = "#bdbdbd",
-	paren = "#bdbdbd",
+	paren = "#cdcddd",
 	hint_blue = "#352cdf",
 	light_blue = "#a7c5db",
 	blue = "#80b0df",

@@ -70,8 +70,8 @@ theme.set_highlights = function()
 	hl(0, "Float", { fg = c.fg, bg = "NONE" })
 	hl(0, "Identifier", { fg = c.fg, bg = "NONE" })
 	hl(0, "Function", { fg = c.yellow, bg = "NONE" })
-	hl(0, "Operator", { fg = c.off_white, bg = "NONE" })
-	hl(0, "Type", { fg = c.orange, bg = "NONE" })
+	hl(0, "Operator", { fg = c.paren, bg = "NONE" })
+	hl(0, "Type", { fg = c.dark_orange, bg = "NONE" })
 	hl(0, "StorageClass", { fg = c.orange, bg = "NONE" })
 	hl(0, "Structure", { fg = c.orange, bg = "NONE" })
 	hl(0, "Typedef", { fg = c.orange, bg = "NONE" })
@@ -341,7 +341,6 @@ theme.set_highlights = function()
 	hl(0, "TelescopeMatching", { fg = c.info_yellow, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = c.light_gray, bg = c.bg })
 	hl(0, "TelescopeResultsLineNr", { fg = c.fg, bg = c.bg })
-	hl(0, "TelescopeCursor", { fg = c.fg, bg = c.normal_bg })
 
 	-- Tree
 	hl(0, "NvimTreeFolderIcon", { fg = c.purp, bg = "NONE" })
@@ -435,6 +434,12 @@ theme.set_highlights = function()
 
 	-- Window Separator
 	hl(0, "WinSep", { fg = c.yellow, bg = c.yellow })
+
+	hl(0, "netrwClassify", { fg = c.off_white, bg = "NONE" })
+
+	-- GO
+	hl(0, "type.definition.go", { fg = c.light_blue, bg = "NONE" })
+	hl(0, "type.go", { fg = c.light_blue, bg = "NONE" })
 end
 
 return theme
